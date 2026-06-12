@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link as RouterLink } from "react-router";
+import { Link as RouterLink, NavLink } from "react-router";
 import { Button, InputGroup, Kbd, Link, TextField } from "@heroui/react";
 import clsx from "clsx";
 
@@ -13,6 +13,12 @@ import {
 } from "components/icons";
 import { siteConfig } from "config/site";
 import { ThemeSwitch } from "./theme-switch";
+
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  clsx(
+    "text-foreground transition-colors hover:text-accent",
+    isActive && "font-medium text-accent",
+  );
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,12 +51,9 @@ export const Navbar = () => {
           <ul className="ml-2 hidden gap-4 lg:flex">
             {siteConfig.navItems.map((item) => (
               <li key={item.href}>
-                <RouterLink
-                  className="text-foreground transition-colors hover:text-accent"
-                  to={item.href}
-                >
+                <NavLink className={navLinkClass} to={item.href}>
                   {item.label}
-                </RouterLink>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -142,21 +145,17 @@ export const Navbar = () => {
         <div className="border-t border-separator sm:hidden">
           <div className="p-4">{searchInput}</div>
           <ul className="flex flex-col gap-2 px-4 pb-4">
-            {siteConfig.navMenuItems.map((item, index) => (
-              <li key={`${item.label}-${index}`}>
-                <Link
-                  className={clsx(
-                    "block py-2 text-lg no-underline",
-                    index === 2
-                      ? "text-accent"
-                      : index === siteConfig.navMenuItems.length - 1
-                        ? "text-danger"
-                        : "text-foreground",
-                  )}
-                  href="#"
+            {siteConfig.navMenuItems.map((item) => (
+              <li key={item.href}>
+                <NavLink
+                  className={({ isActive }) =>
+                    clsx("block py-2 text-lg no-underline", navLinkClass({ isActive }))
+                  }
+                  to={item.href}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
