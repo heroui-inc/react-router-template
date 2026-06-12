@@ -3,3 +3,10 @@ node_modules
 /.cache
 /build
 .env
+.react-router/
+.wrangler/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+bun.lockb
+worker-configuration.d.ts

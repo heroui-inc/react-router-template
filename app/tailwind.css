@@ -1,12 +1,4 @@
 @import "tailwindcss";
+@import "@heroui/styles";
 
-@config "../tailwind.config.js";
-
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-}
+@custom-variant dark (&:is(.dark *));

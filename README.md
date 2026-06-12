@@ -1,46 +1,51 @@
-# Remix & HeroUI Template
+# React Router & HeroUI Template
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+This is a template for creating applications using [React Router v7](https://reactrouter.com/) and [HeroUI v3](https://heroui.com/).
 
 ## Technologies Used
 
-- [Remix 2](https://remix.run/docs/en/main/start/quickstart)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router v7](https://reactrouter.com/)
+- [HeroUI v3](https://heroui.com/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
+- [React 19](https://react.dev/)
 
 ## How to Use
 
-### Use the template with create-remix
-
-To create a new project based on this template using `create-remix`, run the following command:
+To clone the project, run the following command:
 
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/remix-template.git
+git clone https://github.com/heroui-inc/remix-template.git
 ```
 
 ### Install dependencies
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
 ```bash
-npm install
+pnpm install
 ```
 
 ### Run the development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+### Build for production
 
 ```bash
-public-hoist-pattern[]=*@heroui/*
+pnpm build
+pnpm start
 ```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+### Type checking
+
+```bash
+pnpm typecheck
+```
+
+### Linting
+
+```bash
+pnpm lint
+```
