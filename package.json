@@ -11,8 +11,7 @@
     "lint": "eslint --fix",
     "preview": "react-router build && vite preview",
     "cf-typegen": "wrangler types",
-    "typecheck": "wrangler types && react-router typegen && tsc",
-    "postinstall": "wrangler types"
+    "typecheck": "pnpm cf-typegen && react-router typegen && tsc"
   },
   "dependencies": {
     "@heroui/react": "3.1.0",
@@ -45,7 +44,6 @@
     "eslint-plugin-react-hooks": "5.2.0",
     "globals": "16.0.0",
     "lightningcss": "1.32.0",
-    "react-router-dom": "7.17.0",
     "tailwindcss": "4.1.11",
     "typescript": "5.6.3",
     "vite": "6.1.0",
