@@ -1,4 +1,5 @@
 import type { MetaFunction } from "react-router";
+import { Button } from "@heroui/react";
 
 import { GithubIcon } from "components/icons";
 import { subtitle, title } from "components/primitives";
@@ -27,23 +28,25 @@ export default function Index() {
       </div>
 
       <div className="flex gap-3">
-        <a
-          className="button button--primary button--md rounded-full"
-          href={siteConfig.links.docs}
-          rel="noopener noreferrer"
-          target="_blank"
+        <Button
+          className="rounded-full"
+          variant="primary"
+          onPress={() =>
+            window.open(siteConfig.links.docs, "_blank", "noopener,noreferrer")
+          }
         >
           Documentation
-        </a>
-        <a
-          className="button button--tertiary button--md rounded-full"
-          href={siteConfig.links.github}
-          rel="noopener noreferrer"
-          target="_blank"
+        </Button>
+        <Button
+          className="rounded-full"
+          variant="tertiary"
+          onPress={() =>
+            window.open(siteConfig.links.github, "_blank", "noopener,noreferrer")
+          }
         >
           <GithubIcon size={20} />
           GitHub
-        </a>
+        </Button>
       </div>
 
       <div className="mt-8">
