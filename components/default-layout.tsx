@@ -10,7 +10,7 @@ export function DefaultLayout({ children }: { children: React.ReactNode }) {
       <footer className="flex w-full items-center justify-center py-3">
         <a
           className="flex items-center gap-1 text-current no-underline"
-          href="https://heroui.com?utm_source=remix-template"
+          href="https://heroui.com?utm_source=react-router-template"
           rel="noopener noreferrer"
           target="_blank"
         >
