@@ -4,6 +4,7 @@ node_modules
 /build
 .env
 .react-router/
+.wrangler/
 pnpm-lock.yaml
 yarn.lock
 package-lock.json
