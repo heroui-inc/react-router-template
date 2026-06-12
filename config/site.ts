@@ -25,28 +25,6 @@ export const siteConfig = {
       href: "/about",
     },
   ],
-  navMenuItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-  ],
   links: {
     github: "https://github.com/heroui-inc/heroui",
     twitter: "https://twitter.com/getnextui",
