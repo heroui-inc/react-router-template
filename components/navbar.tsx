@@ -145,7 +145,7 @@ export const Navbar = () => {
         <div className="border-t border-separator sm:hidden">
           <div className="p-4">{searchInput}</div>
           <ul className="flex flex-col gap-2 px-4 pb-4">
-            {siteConfig.navMenuItems.map((item) => (
+            {siteConfig.navItems.map((item) => (
               <li key={item.href}>
                 <NavLink
                   className={({ isActive }) =>
