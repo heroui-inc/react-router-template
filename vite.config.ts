@@ -11,4 +11,8 @@ export default defineConfig({
     tailwindcss(),
     tsconfigPaths(),
   ],
+  build: {
+    // esbuild chokes on Tailwind v4 empty :is() from @apply motion-reduce
+    cssMinify: "lightningcss",
+  },
 });
