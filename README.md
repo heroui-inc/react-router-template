@@ -43,3 +43,9 @@ pnpm start
 ```bash
 pnpm typecheck
 ```
+
+### Linting
+
+```bash
+pnpm lint
+```
