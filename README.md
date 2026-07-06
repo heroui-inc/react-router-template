@@ -16,7 +16,7 @@ This is a template for creating applications using [React Router v7](https://rea
 To clone the project, run the following command:
 
 ```bash
-git clone https://github.com/heroui-inc/remix-template.git
+git clone https://github.com/heroui-inc/react-router-template.git
 ```
 
 ### Install dependencies
