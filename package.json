@@ -14,8 +14,8 @@
     "typecheck": "pnpm cf-typegen && react-router typegen && tsc"
   },
   "dependencies": {
-    "@heroui/react": "3.2.1",
-    "@heroui/styles": "3.2.1",
+    "@heroui/react": "3.2.2",
+    "@heroui/styles": "3.2.2",
     "clsx": "2.1.1",
     "isbot": "5.1.32",
     "react": "19.1.0",
