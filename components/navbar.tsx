@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link as RouterLink, NavLink } from "react-router";
 import { Button, InputGroup, Kbd, Link, TextField } from "@heroui/react";
-import clsx from "clsx";
+import { clsx } from "clsx";
 
 import {
   DiscordIcon,

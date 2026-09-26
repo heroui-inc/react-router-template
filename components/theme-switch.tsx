@@ -1,6 +1,6 @@
 import { FC, useCallback } from "react";
 import { useTheme } from "@heroui/react";
-import clsx from "clsx";
+import { clsx } from "clsx";
 
 import { MoonFilledIcon, SunFilledIcon } from "components/icons";
 
