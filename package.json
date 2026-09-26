@@ -6,16 +6,14 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "wrangler dev",
-    "deploy": "react-router build && wrangler deploy",
+    "start": "react-router-serve ./build/server/index.js",
     "lint": "eslint --fix",
-    "preview": "react-router build && vite preview",
-    "cf-typegen": "wrangler types",
-    "typecheck": "pnpm cf-typegen && react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
     "@heroui/react": "3.2.5",
     "@heroui/styles": "3.2.5",
+    "@react-router/serve": "7.17.0",
     "clsx": "2.1.1",
     "isbot": "5.1.32",
     "react": "19.1.0",
@@ -24,7 +22,6 @@
     "tailwind-variants": "3.3.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.43.0",
     "@eslint/compat": "1.2.8",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.25.1",
@@ -46,8 +43,7 @@
     "lightningcss": "1.32.0",
     "tailwindcss": "4.1.11",
     "typescript": "5.6.3",
-    "vite": "8.0.16",
-    "wrangler": "4.107.0"
+    "vite": "8.0.16"
   },
   "engines": {
     "node": ">=22.0.0"

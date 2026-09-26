@@ -95,10 +95,4 @@ export default defineConfig([
       "react/react-in-jsx-scope": "off",
     },
   },
-  {
-    files: ["workers/**/*.ts"],
-    rules: {
-      "import/no-unresolved": "off",
-    },
-  },
 ]);
