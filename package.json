@@ -11,8 +11,8 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@heroui/react": "3.2.6",
-    "@heroui/styles": "3.2.6",
+    "@heroui/react": "3.2.7",
+    "@heroui/styles": "3.2.7",
     "@react-router/serve": "8.4.0",
     "clsx": "2.1.1",
     "isbot": "5.2.2",
